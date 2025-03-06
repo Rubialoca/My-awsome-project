@@ -1,0 +1,99 @@
+body {
+  background: #f9f7fe;
+}
+
+.search-input {
+  background: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  color: #27214266;
+  display: inline-block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.search-button {
+  background: #885df1;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 15px 15px 15px;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 180px;
+  cursor: pointer;
+}
+
+header form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  text-align: left;
+  color: #272142;
+  font-size: 38px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+p {
+  color: #27214266;
+}
+.bold {
+  color: #f65282;
+}
+.windSpeed {
+  color: #f65282;
+}
+
+.weather {
+  border: 1px transparent;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px #41326414;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  padding: 40px;
+  margin: 60px auto;
+  max-width: 600px;
+}
+.degrees {
+  position: relative;
+  bottom: 90px;
+  left: 360px;
+  font-size: 50px;
+  margin-left: 10px;
+}
+.temperature {
+  font-weight: bold;
+  color: #212121;
+  font-size: 80px;
+  margin: 10px;
+}
+
+.unit {
+  position: relative;
+  bottom: 40px;
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: -8px;
+}
+.emoji {
+  margin-right: 0px;
+  font: size 50px;
+}
+
+footer {
+  color: #27214266;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 40px;
+  text-align: center;
+}

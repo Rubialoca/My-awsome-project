@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/index.js" defer></script>
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="weather">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Enter a city.."
+            required
+          />
+          <input type="submit" class="search-button" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="city-name">Paris</h1>
+            <p>
+              <span class="dateAndTime" id="date-time">Saturday 15:32 </span
+              >,<span id="weather-description"> moderate rain </span>
+              <br />
+              Humidity: <strong class="bold">87%</strong>, Wind:
+              <strong class="windSpeed">7.2km/h</strong>
+            </p>
+          </div>
+          <div class="degrees">
+            <span class="emoji"> ☀️</span><span class="temperature">14</span
+            ><span class="unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Merve Kara</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
