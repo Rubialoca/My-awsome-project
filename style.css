@@ -102,8 +102,8 @@ footer {
   .weather {
     margin: 200px auto; /* Sağ ve sol boşlukları eşitlemek için otomatik margin */
     padding: 20px; /* İç boşlukları artırdık */
-    width: 85%; /* Çerçeve genişliği %90 olacak, bu sayede sağ ve sol kenarda eşit boşluk kalır */
-    max-width: 600px; /* Genişlik sınırlamasını kaldırdık */
+    width: 90%; /* Çerçeve genişliği %90 olacak, bu sayede sağ ve sol kenarda eşit boşluk kalır */
+    max-width: 700px; /* Genişlik sınırlamasını kaldırdık */
     box-sizing: border-box; /* Padding ve border'ları hesaba katacak */
   }
   .degrees {
