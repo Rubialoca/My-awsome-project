@@ -106,7 +106,7 @@ footer {
     max-width: 700px; /* Genişlik sınırlamasını kaldırdık */
     box-sizing: border-box; /* Padding ve border'ları hesaba katacak */
     bottom: 300px;
-    top: 150px;
+    top: 20px;
   }
   .degrees {
     position: relative;
@@ -119,7 +119,7 @@ footer {
 
   /* Eğer font boyutunun çok büyük olduğunu hissediyorsan emojiyi de küçült */
   .emoji {
-    font-size: 30px; /* Emojiyi küçültüyoruz */
+    font-size: 40px; /* Emojiyi küçültüyoruz */
     margin-right: 5px;
   }
 
