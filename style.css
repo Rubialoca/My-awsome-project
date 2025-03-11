@@ -99,9 +99,9 @@ footer {
 }
 @media (max-width: 480px) {
   .weather {
-    margin: 0 10px;
+    margin: 200px auto;
     padding: 20px;
-    width: calc(100% - 10px);
+    width: 90%;
     max-width: 700px;
     box-sizing: border-box;
     bottom: 300px;
@@ -115,7 +115,7 @@ footer {
   }
 
   .emoji {
-    font-size: 40px; /* Emojiyi küçültüyoruz */
+    font-size: 40px;
     margin-right: 5px;
   }
 
