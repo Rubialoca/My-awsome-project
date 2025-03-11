@@ -106,6 +106,7 @@ footer {
     max-width: 700px; /* Genişlik sınırlamasını kaldırdık */
     box-sizing: border-box; /* Padding ve border'ları hesaba katacak */
     bottom: 300px;
+    top: 150px;
   }
   .degrees {
     position: relative;
