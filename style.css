@@ -97,3 +97,38 @@ footer {
   margin-top: 40px;
   text-align: center;
 }
+@media (max-width: 480px) {
+  /* Derece (14°C ve güneş emojisi) mobilde, çerçevenin sol tarafında, "Paris" kaymadan sabitlenecek */
+  .weather {
+    margin: 200px auto; /* Sağ ve sol boşlukları eşitlemek için otomatik margin */
+    padding: 20px; /* İç boşlukları artırdık */
+    width: 85%; /* Çerçeve genişliği %90 olacak, bu sayede sağ ve sol kenarda eşit boşluk kalır */
+    max-width: 600px; /* Genişlik sınırlamasını kaldırdık */
+    box-sizing: border-box; /* Padding ve border'ları hesaba katacak */
+    margin-right: -13px;
+  }
+  .degrees {
+    position: relative;
+    /* Paris'in hizasında olacak şekilde üst mesafe ayarı */
+    left: 150px; /* Paris'in hemen soluna gelecek şekilde */
+    font-size: 40px; /* Font boyutunu küçültüyoruz */
+    margin: 10; /* Ek boşluk kaldırıldı */
+    bottom: 150px;
+  }
+
+  /* Eğer font boyutunun çok büyük olduğunu hissediyorsan emojiyi de küçült */
+  .emoji {
+    font-size: 30px; /* Emojiyi küçültüyoruz */
+    margin-right: 5px;
+  }
+
+  /* Derece yazısını (°C) ve emojiyi biraz daha sıkıştırıyoruz */
+  .temperature {
+    font-size: 60px; /* Mobilde çok büyük olmasın, biraz küçültülüyor */
+  }
+
+  /* Unit kısmını da küçültüyoruz */
+  .unit {
+    font-size: 24px; /* Daha küçük boyut */
+  }
+}
