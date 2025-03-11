@@ -105,8 +105,6 @@ footer {
     width: 85%; /* Çerçeve genişliği %90 olacak, bu sayede sağ ve sol kenarda eşit boşluk kalır */
     max-width: 600px; /* Genişlik sınırlamasını kaldırdık */
     box-sizing: border-box; /* Padding ve border'ları hesaba katacak */
-    margin-right: 100px;
-    margin-left: 55px;
   }
   .degrees {
     position: relative;
