@@ -99,18 +99,21 @@ footer {
 }
 @media (max-width: 480px) {
   .weather {
-    margin: 200px auto;
+    margin: 20px auto;
     padding: 20px;
-    width: 90%;
-    max-width: 700px;
-    box-sizing: border-box;
-    bottom: 300px;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 400px;
+    margin-bottom: 300px;
   }
   .degrees {
     position: relative;
-    left: 100px;
+    left: 150px;
     font-size: 40px;
     margin: 10;
+    bottom: 150px;
   }
 
   .emoji {
