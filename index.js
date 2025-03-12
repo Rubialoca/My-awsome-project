@@ -46,7 +46,7 @@ function displayWeather(response) {
   let temperature = Math.round(response.data.temperature.current);
   let city = response.data.city;
   let description = response.data.condition.description;
-  let humidity = response.data.humidity;
+  let humidity = response.data.temperature.humidity;
   let wind = response.data.wind.speed;
   temperatureElement.innerHTML = temperature;
   cityElement.innerHTML = city;
