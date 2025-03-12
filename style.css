@@ -101,12 +101,9 @@ footer {
 @media (max-width: 480px) {
   .weather {
     padding: 5px;
-    width: 80%;
+    width: 90%;
     max-width: 100%;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 150px auto;
   }
 
   .degrees {
