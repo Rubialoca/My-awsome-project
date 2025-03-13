@@ -86,8 +86,9 @@ p {
   margin-left: -8px;
 }
 .emoji {
-  margin-right: 0px;
-  font: size 50px;
+  font-size: 40px;
+  position: relative;
+  top: -30px;
 }
 
 footer {
@@ -116,7 +117,7 @@ footer {
 
   .emoji {
     font-size: 40px;
-    margin-right: 5px;
+    margin-top: 10px;
   }
 
   .temperature {
