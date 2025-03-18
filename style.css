@@ -60,9 +60,9 @@ p {
   border-radius: 16px;
   box-shadow: 0 30px 50px #41326414;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
-  padding: 40px;
+  padding: 10px;
   margin: 60px auto;
-  max-width: 600px;
+  max-width: 620px;
 }
 .degrees {
   position: relative;
@@ -75,7 +75,8 @@ p {
   font-weight: bold;
   color: #212121;
   font-size: 80px;
-  margin: 10px;
+  margin: 5px;
+  padding: 0px;
 }
 
 .unit {
@@ -83,12 +84,14 @@ p {
   bottom: 40px;
   font-size: 28px;
   font-weight: 400;
-  margin-left: -8px;
+  margin-left: -9px;
+  padding: 0px;
 }
-.emoji {
-  font-size: 40px;
-  position: relative;
-  top: -30px;
+.icon {
+  width: 88px;
+  margin-top: 10px;
+  padding: 0px;
+  height: 88px;
 }
 
 footer {
@@ -98,12 +101,15 @@ footer {
   margin-top: 40px;
   text-align: center;
 }
+#city-name {
+  margin-right: 20px;
+}
 
 @media (max-width: 480px) {
   .weather {
     padding: 5px;
-    width: 90%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 620px;
     margin: 150px auto;
   }
 
@@ -115,16 +121,28 @@ footer {
     bottom: 150px;
   }
 
-  .emoji {
-    font-size: 40px;
+  .icon {
+    width: 80px;
     margin-top: 10px;
+    padding: 0px;
+    height: 70px;
+    margin-right: 0px;
   }
 
   .temperature {
     font-size: 60px;
+    margin: 5px;
+    padding: 0px;
+    margin-right: 0px;
   }
 
   .unit {
     font-size: 24px;
+    padding: 0px;
+    margin-left: -9px;
+  }
+  #city-name {
+    margin-right: 10px;
+    margin-left: -9px;
   }
 }

@@ -1,5 +1,5 @@
 console.log("script is excecuted beginning 1");
-let now = new Date();
+
 let dateAndTime = document.querySelector(".dateAndTime");
 let days = [
   "Sunday",
@@ -10,11 +10,14 @@ let days = [
   "Friday",
   "Saturday",
 ];
-let day = days[now.getDay()];
-let hours = now.getHours();
-let minutes = now.getMinutes().toString().padStart(2, "0");
+function updateTimeFromAPI(response) {
+  let date = new Date(response.data.time * 1000);
+  let day = days[date.getDay()];
+  let hours = date.getHours().toString().padStart(2, "0");
+  let minutes = date.getMinutes().toString().padStart(2, "0");
 
-dateAndTime.innerHTML = `${day}, ${hours}:${minutes}`;
+  dateAndTime.innerHTML = `${day}, ${hours}:${minutes}`;
+}
 
 let searchForm = document.querySelector("#search-form");
 let searchInput = document.querySelector(".search-input");
@@ -42,20 +45,25 @@ function displayWeather(response) {
   let descriptionElement = document.querySelector("#weather-description");
   let humidityElement = document.querySelector(".bold");
   let windElement = document.querySelector(".windSpeed");
+  let iconElement = document.querySelector(".icon");
 
+  iconElement.setAttribute("src", response.data.condition.icon_url);
   let temperature = Math.round(response.data.temperature.current);
-  let city = response.data.city;
   let description = response.data.condition.description;
-  let humidity = response.data.humidity;
+  let humidity = response.data.temperature.humidity;
   let wind = response.data.wind.speed;
-  temperatureElement.innerHTML = temperature;
+  let city = response.data.city;
+
   cityElement.innerHTML = city;
+  temperatureElement.innerHTML = temperature;
   descriptionElement.innerHTML = description;
   humidityElement.innerHTML = `${humidity}%`;
   windElement.innerHTML = `${wind} km/h`;
+  iconElement.setAttribute("src", response.data.condition.icon_url);
+  updateTimeFromAPI(response);
 }
 
-function searchCity(city) {
+function searchCity(city = "Istanbul") {
   let apiKey = "64a081deod364440c784d75dbec5tbfa";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(displayWeather);
@@ -66,5 +74,6 @@ function handleSearch(event) {
   let searchInput = document.querySelector(".search-input");
   let city = searchInput.value.trim();
 }
-
-searchForm.addEventListener("submit", handleSearch);
+window.onload = function () {
+  searchCity("Istanbul");
+};
